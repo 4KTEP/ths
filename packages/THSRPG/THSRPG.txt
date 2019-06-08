@@ -1,5 +1,9 @@
 Three Hundred Sixty RPG
 ----------------------------------------------------------
-gource -1280x720 -f --highlight-all-users --multi-sampling C:\RAGEMP\server-files\
+gource -1920x1080 -f --highlight-all-users --multi-sampling C:\RAGEMP\server-files\.git\
 https://www.youtube.com/watch?v=PEKN8NtBDQ0
 https://www.youtube.com/watch?v=9d5bJc8o7MA 
+git add .
+git status
+git commit -m "com"
+cd C:\RAGEMP\server-files\

@@ -32,7 +32,9 @@ mp.events.add ('playerDeath', (player) => {
     player.health = 100;
 });
 
-
+mp.events.addCommand('xyz', (player) => {
+    player.outputChatBox(`X: ${player.position.x.toFixed(2)} Y: ${player.position.y.toFixed(2)} Z: ${player.position.z.toFixed(2)}`);
+});
 
 
 

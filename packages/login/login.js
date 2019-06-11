@@ -113,6 +113,6 @@ mp.events.add("playerQuit", (player) => {
 });
 
 mp.events.add("playerJoin", (player) => {
-    console.log(`${login} вошёл.`);
     player.loggedInAs = "";
+  //  console.log('${login} вошёл.');
 });

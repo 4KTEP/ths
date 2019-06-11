@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="file/css/style.css">
+    </head>
+    <body>
+        <div class="containers">
+            <div class="containers_left">
+                <!--img-->
+                <p>TEST</p>
+            </div>
+            <div class="containers_center">
+                <div id="login">
+                    <input type="text" class="" id="" placeholder="Логин"><br>
+                    <input type="password" class="" id="" placeholder="Пароль"><br>
+                    <button>Войти</button>
+                </div>
+                <div id="register" class="hidden">
+                    <input type="text" class="" id="" placeholder="Логин"><br>
+                    <input type="password" class="" id="" placeholder="Пароль"><br>
+                    <input type="password" class="" id="" placeholder="Повторите пароль"><br>
+                    <button>Зарегистрироваться</button>
+                </div>
+            </div>
+            <div class="containers_right">
+                <div id="login">
+                    <a href="#register" onclick="changePanel('login', 'register')">Регистрация</a>                    
+                </div>
+                <div id="register">
+                    <a href="#login" onclick="changePanel('register', 'login')">Уже есть аккаунт</a>
+                </div>    
+            </div>
+        </div>
+        <script src="./file/script/LoginPanel.js"></script>
+    </body>
+</html>

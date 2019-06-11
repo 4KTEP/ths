@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    display: grid;
+    overflow:  hidden;
+}
+
+.containers{
+    display: flex;
+    float: left;
+    width: 1000px;
+    margin: auto;
+}
+
+.containers_left{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+
+    width: 33%;
+    background: gray;
+    height: 500px;
+}
+
+.containers_center{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+
+    width: 34%;
+    background: gold;
+    height: 500px;
+}
+
+.containers_right{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+
+    width: 33%;
+    background: darkolivegreen;
+    height: 500px;
+}
+
+.hidden{
+    display: none;
+}

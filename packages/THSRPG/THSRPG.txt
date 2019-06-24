@@ -7,3 +7,13 @@ git add .
 git status
 git commit -m "com"
 cd C:\RAGEMP\server-files\
+
+
+
+----------------------------------------------------------------
+local:
+git add *
+git commit -m ""
+git push
+host:
+git pull

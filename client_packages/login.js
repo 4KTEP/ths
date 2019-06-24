@@ -5,6 +5,23 @@ mp.events.add("loginDataToServer", (user, pass, state) => {
     mp.events.callRemote("sendDataToServer", user, pass, state);
 });
 
+var test = 0
+mp.keys.bind(0x71, true, function() {
+    if(test == 0){
+    mp.events.callRemote('keypress:F2');
+    loginBrowser.destroy();
+    mp.gui.chat.push("Вы вошли!");
+    mp.gui.chat.activate(true);
+    mp.gui.cursor.show(false, false);
+    test = 1;
+    }else{
+    loginBrowser.reload();
+    test = 0;
+    mp.gui.chat.push("Test");
+    }
+});
+
+
 mp.events.add("loginHandler", (handle) => {
     switch(handle){
         case "success":

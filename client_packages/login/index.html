@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" href="file/css/style.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="file/css/style.css">
     </head>
     <body>
+        <!--Democracy and Capitalism-->
         <div class="containers">
-            <div class="containers_left">
-                <!--img-->
-                <p>TEST</p>
-            </div>
+            <div class="containers_left"></div>
             <div class="containers_center">
-                <div id="login">
-                    <input type="text" class="" id="" placeholder="Логин"><br>
-                    <input type="password" class="" id="" placeholder="Пароль"><br>
-                    <button>Войти</button>
+                <div class="login_top">
+                    <h1>...Пока думаю...</h1>
                 </div>
-                <div id="register" class="hidden">
-                    <input type="text" class="" id="" placeholder="Логин"><br>
-                    <input type="password" class="" id="" placeholder="Пароль"><br>
-                    <input type="password" class="" id="" placeholder="Повторите пароль"><br>
-                    <button>Зарегистрироваться</button>
+                <div class="login_center">
+                    <div id="login">
+                        <input type="text" class="input_text" id="" placeholder="Логин"><br>
+                        <input type="password" class="input_text" id="" placeholder="Пароль"><br>
+                        <input type="submit" class="input_button" value="Войти"><br>
+                    </div>
+                    <div id="register" class="hidden">
+                        <input type="text" class="input_text" id="" placeholder="Логин"><br>
+                        <input type="password" class="input_text" id="" placeholder="Пароль"><br>
+                        <input type="password" class="input_text" id="" placeholder="Повторите пароль"><br>
+                        <input type="submit" class="input_button" value="Зарегистрироваться"><br>
+                    </div>
                 </div>
-            </div>
-            <div class="containers_right">
-                <div id="login">
-                    <a href="#register" onclick="changePanel('login', 'register')">Регистрация</a>                    
+                <div class="login_bottop">
+                    <a href="#register" onclick="changePanel('login', 'register')" class="reg_log">Регистрация</a>
+                    <a href="#login" onclick="changePanel('register', 'login')" class="reg_log hidden">Уже есть аккаунт</a>
                 </div>
-                <div id="register">
-                    <a href="#login" onclick="changePanel('register', 'login')">Уже есть аккаунт</a>
-                </div>    
             </div>
         </div>
         <script src="./file/script/LoginPanel.js"></script>

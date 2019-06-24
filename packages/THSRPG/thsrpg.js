@@ -36,9 +36,19 @@ mp.events.addCommand('xyz', (player) => {
     player.outputChatBox(`X: ${player.position.x.toFixed(2)} Y: ${player.position.y.toFixed(2)} Z: ${player.position.z.toFixed(2)}`);
 });
 
-
-
-
+mp.events.addCommand('car', (player, car) => {
+    let mycar = mp.joaat(car)
+    mp.vehicles.new(mycar, new mp.Vector3(player.position.x, player.position.y + 4, player.position.z),
+    {
+        heading: 0,
+        numberPlate: "REDUX",
+        alpha: 255,
+        color: [[254,248,230],[254,248,230]],
+        locked: false,
+        engine: false,
+        dimension: 0
+    });
+})
 
 
 

@@ -12,7 +12,7 @@ module.exports =
             password : 'b1c351a8',
             database : 'thsrpg'
         });
-        
+
         this.handle.connect(function (err){
             if(err){
                 switch(err.code){
@@ -78,7 +78,7 @@ mp.events.add("sendDataToServer", (player, login, pass, state) => {
                             if(!err){
                                 gm.mysql.handle.query('INSERT INTO `accounts` SET login = ?, password = ?', [login, hash], function(err, res){
                                     if(!err){
-                                        player.name = username;
+                                        player.name = login;
                                         player.call("loginHandler", ["registered"]);
                                         gm.auth.registerAccount(player);
                                         console.log("\x1b[92m" + login + "\x1b[39m зарегистрировался.");

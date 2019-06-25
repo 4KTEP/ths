@@ -7,9 +7,9 @@ module.exports =
 
     connect: function(call){
         this.handle = mysql.createConnection({
-            host     : 'localhost',
+            host     : '89.223.95.183',
             user     : 'root',
-            password : '',
+            password : 'b1c351a8',
             database : 'thsrpg'
         });
 

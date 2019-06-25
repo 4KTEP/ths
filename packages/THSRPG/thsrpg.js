@@ -50,6 +50,13 @@ mp.events.addCommand('car', (player, car) => {
     });
 })
 
+mp.events.add ('fullcmd', (player) => {
+    player.outputChatBox("/hp '1-100' - выдаёт ХП");
+    player.outputChatBox("/armour '0-100' - выдаёт броню");
+    player.outputChatBox("/car 'название машины' - спавнит рядом авто");
+    player.outputChatBox("/weapon 'название оружие' - выдаёт оружие");
+    player.outputChatBox("Пока всё...");
+});
 
 
 

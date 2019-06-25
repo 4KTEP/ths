@@ -3,7 +3,7 @@
 	"name" : "THS RPG", 
 	"gamemode" : "freeroam", 
 	"stream-distance" : 500.0,
-	"announce" : false,
+	"announce" : true,
 	"csharp" : "disabled",
 	"bind" : "89.223.95.183",
 	"port": 22005,

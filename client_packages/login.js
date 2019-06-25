@@ -13,7 +13,6 @@ mp.keys.bind(0x71, true, function() {
     mp.gui.chat.push("Все доступные команды: /fullcmd");
     mp.gui.chat.activate(true);
     mp.gui.cursor.show(false, false);
-    }
 });
 
 mp.keys.bind(0x72, true, function() {

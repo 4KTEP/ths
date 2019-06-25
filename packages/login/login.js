@@ -12,7 +12,6 @@ module.exports =
             password : 'b1c351a8',
             database : 'thsrpg'
         });
-
         this.handle.connect(function (err){
             if(err){
                 switch(err.code){

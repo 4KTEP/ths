@@ -1,6 +1,6 @@
 Three Hundred Sixty RPG
 e237I-FF5pT-9U1Qd-MRB66
-----------------------------------------------------------
+------------------------------------------------------------------------------------------
 gource -1920x1080 -f --highlight-all-users --multi-sampling C:\RAGEMP\server-files\.git\
 https://www.youtube.com/watch?v=PEKN8NtBDQ0
 https://www.youtube.com/watch?v=9d5bJc8o7MA 
@@ -11,7 +11,7 @@ cd C:\RAGEMP\server-files\
 
 
 
-----------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 local:
 git add *
 git commit -m ""
@@ -19,3 +19,7 @@ git push
 host:
 cd /opt/ths/
 git pull
+
+
+---------------------------------------------------------------------------------------------
+rx7cwest

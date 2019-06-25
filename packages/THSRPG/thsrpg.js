@@ -41,8 +41,8 @@ mp.events.addCommand('car', (player, car) => {
     mp.vehicles.new(mycar, new mp.Vector3(player.position.x, player.position.y + 4, player.position.z),
     {
         heading: -180,
-        numberPlate: "REDUX",
-        alpha: 255,
+        numberPlate: "Kolya",
+        alpha: 10,
         color: [[254,248,230],[254,248,230]],
         locked: false,
         engine: false,

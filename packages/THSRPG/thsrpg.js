@@ -40,7 +40,7 @@ mp.events.addCommand('car', (player, car) => {
     let mycar = mp.joaat(car)
     mp.vehicles.new(mycar, new mp.Vector3(player.position.x, player.position.y + 4, player.position.z),
     {
-        heading: 0,
+        heading: 10,
         numberPlate: "REDUX",
         alpha: 255,
         color: [[254,248,230],[254,248,230]],

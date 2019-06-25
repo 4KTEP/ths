@@ -16,7 +16,7 @@ module.exports =
             if(err){
                 switch(err.code){
                     case "ECONNREFUSED":
-                        console.log("\x1b[93m[MySQL] \x1b[97mОшибка: проверьте информацию о вашем соединении (packages/mysql/mysql.js) или убедитесь, что ваш сервер MySQL работает. \x1b[39m");
+                        console.log("\x1b[93m[MySQL] \x1b[97mОшибка: проверьте информацию о вашем соединении (packages/login/login.js) или убедитесь, что ваш сервер MySQL работает. \x1b[39m");
                         break;
                     case "ER_BAD_DB_ERROR":
                         console.log("\x1b[91m[MySQL] \x1b[97mОшибка: введенное вами имя базы данных не существует. \x1b[39m");

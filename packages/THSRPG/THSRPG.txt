@@ -16,4 +16,5 @@ git add *
 git commit -m ""
 git push
 host:
+cd /opt/ths/
 git pull

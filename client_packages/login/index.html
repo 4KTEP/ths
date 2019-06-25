@@ -17,13 +17,13 @@
                     <div id="login">
                         <input type="text" class="input_text" id="loginName" placeholder="Логин"><br>
                         <input type="password" class="input_text" id="loginPass" placeholder="Пароль"><br>
-                        <input type="submit" class="input_button" id="loginBtn" value="Войти"><br>
+                        <input type="submit" class="input_button" id="loginBtn" onclick="sendAccountInfo(0)" value="Войти"><br>
                     </div>
                     <div id="register" class="hidden">
                         <input type="text" class="input_text" id="registerName" placeholder="Логин"><br>
                         <input type="password" class="input_text" id="registerPass" placeholder="Пароль"><br>
                         <input type="password" class="input_text" id="registerPass2" placeholder="Повторите пароль"><br>
-                        <input type="submit" class="input_button" id="registerBtn" value="Зарегистрироваться"><br>
+                        <input type="submit" class="input_button" id="registerBtn" onclick="sendAccountInfo(1)" value="Зарегистрироваться"><br>
                     </div>
                 </div>
                 <div class="login_bottop">
@@ -32,6 +32,25 @@
                 </div>
             </div>
         </div>
+        <div class="alert alert-danger incorrect-info" role="alert">
+            <i class="fas fa-exclamation-circle"></i> Error: Incorrect username or password.
+        </div>
+        <div class="alert alert-danger logged" role="alert">
+            <i class="fas fa-exclamation-circle"></i> Error: Account is currently in use.
+        </div>
+        <div class="alert alert-danger taken-info" role="alert">
+            <i class="fas fa-exclamation-circle"></i> Error: Username taken.
+        </div>
+        <div class="alert alert-danger short-info" role="alert">
+            <i class="fas fa-exclamation-circle"></i> Error: Username or Password is too short
+        </div>
+        <div class="alert alert-danger password-mismatch" role="alert">
+            <i class="fas fa-exclamation-circle"></i> Error: Your password didn't match
+        </div>
         <script src="./file/script/LoginPanel.js"></script>
+        <script src="./file/script/sript.js"></script>
+        <script type="text/javascript">
+            $('.alert-danger').hide();
+        </script>
     </body>
 </html>

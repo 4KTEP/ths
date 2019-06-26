@@ -4,7 +4,7 @@ function sendAccountInfo(state){
         let loginName = document.getElementById("loginName");
         let loginPass = document.getElementById("loginPass");
         $("#loginBtn").hide();
-		
+    
         mp.trigger("loginDataToServer", loginName.value, loginPass.value, state);
     } else {    //Register State
         let registerName = document.getElementById("registerName");

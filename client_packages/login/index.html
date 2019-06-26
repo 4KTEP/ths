@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="file/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
         <script src="assets/js/jquery-3.2.1.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <!--Democracy and Capitalism-->
-        <div class="containers">
-            <div class="containers_left"></div>
-            <div class="containers_center">
-                <div class="login_top">
-                    <h1>THS RPG</h1><br>
-                    <h6>Нажми F2</h6>
-                </div>
-                <div class="login_center">
-                    <div id="login">
-                        <input type="text" class="input_text" id="loginName" placeholder="Логин"><br>
-                        <input type="password" class="input_text" id="loginPass" placeholder="Пароль"><br>
-                        <input type="submit" class="input_button" id="loginBtn" onclick="sendAccountInfo(0)" value="Войти"><br>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="text-center">MySQL Login Panel</h1>
+                    <br>
+                    <div class="alert alert-danger incorrect-info" role="alert">
+                        <i class="fas fa-exclamation-circle"></i> Error: Incorrect username or password.
                     </div>
-                    <div id="register" class="hidden">
-                        <input type="text" class="input_text" id="registerName" placeholder="Логин"><br>
-                        <input type="password" class="input_text" id="registerPass" placeholder="Пароль"><br>
-                        <input type="password" class="input_text" id="registerPass2" placeholder="Повторите пароль"><br>
-                        <input type="submit" class="input_button" id="registerBtn" onclick="sendAccountInfo(1)" value="Зарегистрироваться"><br>
+                    <div class="alert alert-danger logged" role="alert">
+                        <i class="fas fa-exclamation-circle"></i> Error: Account is currently in use.
                     </div>
-                </div>
-                <div class="login_bottop">
-                    <a href="#register" onclick="changePanel('login', 'register')" class="reg_log">Регистрация</a>
-                    <a href="#login" onclick="changePanel('register', 'login')" class="reg_log hidden">Уже есть аккаунт</a>
+                    <div class="alert alert-danger taken-info" role="alert">
+                        <i class="fas fa-exclamation-circle"></i> Error: Username taken.
+                    </div>
+                    <div class="alert alert-danger short-info" role="alert">
+                        <i class="fas fa-exclamation-circle"></i> Error: Username or Password is too short
+                    </div>
+                    <div class="alert alert-danger password-mismatch" role="alert">
+                        <i class="fas fa-exclamation-circle"></i> Error: Your password didn't match
+                    </div>
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab">Register</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="loginName" placeholder="Username">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" id="loginPass" placeholder="Password">
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg btn-block" id="loginBtn" onclick="sendAccountInfo(0);">Login</button>
+                        </div>
+                        <div class="tab-pane fade" id="register" role="tabpanel">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="registerName" placeholder="Username (Min 3)">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" id="registerPass" placeholder="Password (Min 5)">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" id="registerPass2" placeholder="Repeat Password">
+                            </div>
+                            <button type="button" class="btn btn-success btn-lg btn-block" id="registerBtn" onclick="sendAccountInfo(1);">Register</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="alert alert-danger incorrect-info" role="alert">
-            <i class="fas fa-exclamation-circle"></i> Error: Incorrect username or password.
-        </div>
-        <div class="alert alert-danger logged" role="alert">
-            <i class="fas fa-exclamation-circle"></i> Error: Account is currently in use.
-        </div>
-        <div class="alert alert-danger taken-info" role="alert">
-            <i class="fas fa-exclamation-circle"></i> Error: Username taken.
-        </div>
-        <div class="alert alert-danger short-info" role="alert">
-            <i class="fas fa-exclamation-circle"></i> Error: Username or Password is too short
-        </div>
-        <div class="alert alert-danger password-mismatch" role="alert">
-            <i class="fas fa-exclamation-circle"></i> Error: Your password didn't match
-        </div>
-        <script src="./file/script/LoginPanel.js"></script>
-        <script src="./file/script/script.js"></script>
+        <script src="assets/js/main.js"></script>
         <script type="text/javascript">
             $('.alert-danger').hide();
         </script>

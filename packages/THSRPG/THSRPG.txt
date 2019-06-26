@@ -25,3 +25,9 @@ git pull
 rx7cwest
 
 systemctl stop rage
+
+
+sudo nano /usr/share/phpmyadmin/libraries/sql.lib.php
+
+git reset --hard
+git clone https://github.com/4KTEP/ths.git

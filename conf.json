@@ -4,8 +4,7 @@
 	"gamemode" : "freeroam", 
 	"stream-distance" : 500.0,
 	"announce" : true,
-	"csharp" : "disabled",
-	"bind" : "89.223.95.183",
+	"csharp" : "enabled",
 	"port": 22005,
 	"language" : "ru"
 }

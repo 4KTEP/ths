@@ -18,6 +18,6 @@
   "homepage": "https://github.com/MrPancakers/ragemp-mysql",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
-    "mysql": "^2.15.0"
+    "mysql": "^2.18.0"
   }
 }
